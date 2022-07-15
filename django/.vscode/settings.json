@@ -1,0 +1,4 @@
+{
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}/meeting_planner"]
+}

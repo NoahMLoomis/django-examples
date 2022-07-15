@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ticketing app - {%block title %} {% endblock %}</title>
+    <link ref="stylesheet" href={% static 'styles.css' %} >
+  </head>
+  <body>
+    <nav>
+      <a href={% url 'index'%}>Home</a>
+      <a href={% url 'submit'%}>New ticket</a>
+      <a href={% url 'tickets'%}>View tickets</a>
+    </nav>
+    {% block content%}{% endblock %}
+  </body>
+</html>

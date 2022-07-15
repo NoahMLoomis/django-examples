@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}All Rooms{% endblock title %} 
+{%block content %}
+<ul>
+  {% for room in all_rooms%}
+  <li>{{room.name}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
